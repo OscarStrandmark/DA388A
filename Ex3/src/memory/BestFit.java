@@ -128,7 +128,7 @@ public class BestFit extends Memory {
 
 	//Sorts lists, used for easier debugging. Don't know if lists are actualy supposed to be sorted, so I'm just letting them sort by default.
 	private void sortLists() {
-		boolean WORK = true;
+		boolean WORK = false;
 		if(WORK){
 			Collections.sort(freeList);
 			Collections.sort(allocated);

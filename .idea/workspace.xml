@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="199a8410-a03a-4545-89ee-561713a67262" name="Default Changelist" comment="Full commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DA388A.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex2/Ex2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex3/Ex3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex3/src/custom/MemoryArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex3/src/batches/ComplexBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/batches/ComplexBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex3/src/memory/BestFit.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/memory/BestFit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex3/src/memory/FirstFit.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/memory/FirstFit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ex3/batches/ComplexBatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex3/batches/ComplexBatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ex3/custom/MemoryArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex3/custom/MemoryArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ex3/memory/BestFit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex3/memory/BestFit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ex3/memory/FirstFit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex3/memory/FirstFit.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\dev\git\DA388A\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SOFw1ZsdnGox5rZhDKHPmNw9MB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ex2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\git\DA388A\Ex2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\git\DA388A\Ex3\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ComplexBatch">
+    <configuration name="ComplexBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="batches.ComplexBatch" />
+      <module name="Ex3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="batches.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="batches.SimpleBatch" />
+      <module name="Ex3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="batches.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ComplexBatch" />
+        <item itemvalue="Application.SimpleBatch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="199a8410-a03a-4545-89ee-561713a67262" name="Default Changelist" comment="" />
+      <created>1571400464318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571400464318</updated>
+    </task>
+    <task id="LOCAL−00001" summary="Redone Ex2 - not working">
+      <created>1571407730892</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1571407730892</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Redone Ex2 - not working">
+      <created>1571407756547</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1571407756547</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Redone Ex2 - not working">
+      <created>1571407849394</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1571407849394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Redone Ex2 - not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redone Ex2 - not working" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Ex3/src/batches/ComplexBatch.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="m" />
+        <watch expression="((MemoryArea)((java.util.ArrayList)((BestFit)m).allocated).get(0)).size" custom="custom.MemoryArea,java.util.ArrayList,memory.BestFit" />
+        <watch expression="m" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
