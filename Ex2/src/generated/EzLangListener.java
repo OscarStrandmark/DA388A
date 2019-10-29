@@ -97,6 +97,16 @@ public interface EzLangListener extends ParseTreeListener {
 	 */
 	void exitAdd(EzLangParser.AddContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link EzLangParser#sub}.
+	 * @param ctx the parse tree
+	 */
+	void enterSub(EzLangParser.SubContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EzLangParser#sub}.
+	 * @param ctx the parse tree
+	 */
+	void exitSub(EzLangParser.SubContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link EzLangParser#mul}.
 	 * @param ctx the parse tree
 	 */
@@ -136,6 +146,26 @@ public interface EzLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNequ(EzLangParser.NequContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link EzLangParser#less}.
+	 * @param ctx the parse tree
+	 */
+	void enterLess(EzLangParser.LessContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EzLangParser#less}.
+	 * @param ctx the parse tree
+	 */
+	void exitLess(EzLangParser.LessContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link EzLangParser#greater}.
+	 * @param ctx the parse tree
+	 */
+	void enterGreater(EzLangParser.GreaterContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link EzLangParser#greater}.
+	 * @param ctx the parse tree
+	 */
+	void exitGreater(EzLangParser.GreaterContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link EzLangParser#atom}.
 	 * @param ctx the parse tree

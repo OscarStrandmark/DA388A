@@ -64,6 +64,12 @@ public interface EzLangVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAdd(EzLangParser.AddContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link EzLangParser#sub}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSub(EzLangParser.SubContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link EzLangParser#mul}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -87,6 +93,18 @@ public interface EzLangVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitNequ(EzLangParser.NequContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link EzLangParser#less}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLess(EzLangParser.LessContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link EzLangParser#greater}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitGreater(EzLangParser.GreaterContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link EzLangParser#atom}.
 	 * @param ctx the parse tree

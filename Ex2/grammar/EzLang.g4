@@ -6,7 +6,8 @@ file
 
 code
 : statement '.' code
-|
+| statement '.'
+| loop code
 ;
 
 statement
@@ -18,9 +19,9 @@ statement
 ;
 
 loop
-: 'loop' '(' cond ')'
+: 'loop' '(' cond '):'
   code
-  'end loop'
+  'end loop.'
 ;
 
 print
@@ -42,10 +43,15 @@ assign
 math
 : add
 | mul
+| sub
 ;
 
 add
 : atom '+' atom ('+' atom)*
+;
+
+sub
+: atom '-' atom ('-' atom)*
 ;
 
 mul
@@ -55,6 +61,8 @@ mul
 cond
 : equ
 | nequ
+| less
+| greater
 ;
 
 equ
@@ -63,6 +71,14 @@ equ
 
 nequ
 : atom '!equals' atom
+;
+
+less
+: atom '<<' atom
+;
+
+greater
+: atom '>>' atom
 ;
 
 atom

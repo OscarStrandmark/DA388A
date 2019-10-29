@@ -123,6 +123,18 @@ public class EzLangBaseListener implements EzLangListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterSub(EzLangParser.SubContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSub(EzLangParser.SubContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterMul(EzLangParser.MulContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -166,6 +178,30 @@ public class EzLangBaseListener implements EzLangListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitNequ(EzLangParser.NequContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLess(EzLangParser.LessContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLess(EzLangParser.LessContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGreater(EzLangParser.GreaterContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGreater(EzLangParser.GreaterContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

@@ -1,0 +1,10 @@
+a = 0.
+b = 1.
+c = 10.
+
+loop(b << c):
+a = a + b.
+b = b + 1.
+end loop.
+
+print b.
