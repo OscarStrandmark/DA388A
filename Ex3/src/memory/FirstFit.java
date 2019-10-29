@@ -48,9 +48,6 @@ public class FirstFit extends Memory {
 
 			if(area.getSize() >= size){ //If objects fit in current area
 
-
-
-				//THIS PLACES ALLOCATED AREA AT THE START OF THE FREE SPACE
 				p.pointAt(area.getAddress()); //Point the pointer
 
 				freeList.remove(area); //Remove the area from the list of free areas
@@ -58,7 +55,6 @@ public class FirstFit extends Memory {
 				if(area.getSize()-size > 0){ //Check if remaining size != 0, this is to avoid an object with Ex. Address = 1000, size = 0
 					freeList.add(new MemoryArea(area.getAddress()+size,area.getSize()-size)); //Add the remaining area to the list of free areas
 				}
-
 
 				i = freeList.size();
 			}
@@ -126,9 +122,9 @@ public class FirstFit extends Memory {
 		System.out.println(ps);
 	}
 
-	//Sorts lists, used for easier debugging. Don't know if lists are actualy supposed to be sorted, so I'm just letting them sort by default.
+	//Sorts lists, used for easier debugging. Don't know if lists are actually supposed to be sorted, so I'm just letting them sort by default.
 	private void sortLists() {
-		boolean WORK = false;
+		boolean WORK = true;
 		if(WORK){
 			Collections.sort(freeList);
 			Collections.sort(allocated);
