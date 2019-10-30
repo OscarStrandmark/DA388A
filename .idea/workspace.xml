@@ -2,17 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3fa346-8700-4c29-ad72-15f4ee5a3737" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Ex2/output/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex2/output/output_VM.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex2/src/Translator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex2/translator/Translator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLang.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLang.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/grammar/EzLang.g4" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/grammar/EzLang.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex2/src/CompileEzLang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/CompileEzLang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex2/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/src/Interpreter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/src/RunEzLang.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex3/src/batches/ComplexBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/batches/ComplexBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex3/src/batches/SimpleBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/batches/SimpleBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex3/src/memory/BestFit.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/memory/BestFit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex3/src/memory/FirstFit.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex3/src/memory/FirstFit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ex3/memory/BestFit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex3/memory/BestFit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ex3/memory/FirstFit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ex3/memory/FirstFit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/HackGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLang.interp" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLang.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLang.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLang.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/generated/EzLangVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/generated/EzLangVisitor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +70,7 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ex2/grammar/TestProgram" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ex2/src/generated" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.1150748" />
@@ -60,12 +78,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\git\DA388A\Ex2\lib" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\git\DA388A\Ex2\src\generated" />
       <recent name="C:\dev\git\DA388A\Ex2\src" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\git\DA388A\Ex2\translator" />
+      <recent name="C:\dev\git\DA388A\Ex2\lib" />
       <recent name="C:\dev\git\DA388A\Ex2\src\generated" />
       <recent name="C:\dev\git\DA388A\Ex2\src" />
     </key>
@@ -82,7 +101,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ComplexBatch">
+  <component name="RunManager" selected="Application.Translator">
+    <configuration name="CompileEzLang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompileEzLang" />
+      <module name="Ex2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ComplexBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="batches.ComplexBatch" />
       <module name="Ex3" />
@@ -109,8 +135,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Translator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Translator" />
+      <module name="Ex2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Translator" />
+        <item itemvalue="Application.CompileEzLang" />
         <item itemvalue="Application.ComplexBatch" />
         <item itemvalue="Application.SimpleBatch" />
       </list>
@@ -127,6 +162,13 @@
       <option name="presentableId" value="Default" />
       <updated>1571656468053</updated>
     </task>
+    <task id="LOCAL−00001" summary="Uppgift 2 färdig.">
+      <created>1572430433968</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1572430433968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,5 +186,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Uppgift 2 färdig." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uppgift 2 färdig." />
   </component>
 </project>

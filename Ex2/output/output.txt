@@ -1,0 +1,22 @@
+push 0
+pop a
+push 1
+pop b
+push 10
+pop c
+label EnterLabel_1
+push b
+push c
+lt
+if-goto ExitLabel_1
+push a
+push b
+add
+pop a
+push b
+push 1
+add
+pop b
+goto EnterLabel_1
+label ExitLabel_1
+print b

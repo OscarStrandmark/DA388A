@@ -11,8 +11,7 @@ code
 ;
 
 statement
-: declare
-| assign
+: assign
 | math
 | print
 | loop
@@ -25,19 +24,12 @@ loop
 ;
 
 print
-: 'print' atom
-| 'print' cond
-| 'print' math
-;
-
-declare
-: 'var' ID
+: 'print' ID
 ;
 
 assign
 : ID '=' INT
 | ID '=' math
-| ID '=' cond
 ;
 
 math

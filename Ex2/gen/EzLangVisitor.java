@@ -40,12 +40,6 @@ public interface EzLangVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPrint(EzLangParser.PrintContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link EzLangParser#declare}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitDeclare(EzLangParser.DeclareContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link EzLangParser#assign}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

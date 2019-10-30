@@ -5,33 +5,20 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
-import java.io.*;
-import java.util.Scanner;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class CompileEzLang {
     public static void main(String[] args) throws IOException {
-        String infnam;
-        String outfnam = args[1];
-        boolean traceOn = args.length < 3 || "traceOn".equalsIgnoreCase(args[2]);
+        String filepath_in = "C:\\dev\\git\\DA388A\\Ex2\\grammar\\TestProgram";
+        String filepath_out = "C:\\dev\\git\\DA388A\\Ex2\\output\\output.txt";
 
-        if (args.length > 0) {
-            infnam = args[0];
-        } else {
-            System.out.println("Vilken fil vill du köra?");
-            Scanner scanner = new Scanner(System.in);
-            infnam = scanner.nextLine();
-        }
-
-        ANTLRInputStream input = new ANTLRInputStream(new FileInputStream(infnam));
+        ANTLRInputStream input = new ANTLRInputStream(new FileInputStream(filepath_in));
         EzLangLexer lexer = new EzLangLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         EzLangParser parser = new EzLangParser(tokens);
         ParseTree tree = parser.file();
         ParseTreeWalker walker = new ParseTreeWalker();
-        HackGen out = new HackGen(1024, 2048, 1025);
-        walker.walk(new Compiler(infnam, out, traceOn), tree);
-        Writer w = new OutputStreamWriter(new FileOutputStream(outfnam), "US-ASCII");
-        out.outputCode(w);
-        w.close();
+        walker.walk(new Compiler(filepath_out), tree);
     }
 }

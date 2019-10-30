@@ -57,16 +57,6 @@ public interface EzLangListener extends ParseTreeListener {
 	 */
 	void exitPrint(EzLangParser.PrintContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link EzLangParser#declare}.
-	 * @param ctx the parse tree
-	 */
-	void enterDeclare(EzLangParser.DeclareContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link EzLangParser#declare}.
-	 * @param ctx the parse tree
-	 */
-	void exitDeclare(EzLangParser.DeclareContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link EzLangParser#assign}.
 	 * @param ctx the parse tree
 	 */
