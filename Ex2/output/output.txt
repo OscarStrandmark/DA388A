@@ -7,7 +7,7 @@ pop c
 label EnterLabel_1
 push b
 push c
-lt
+gt
 if-goto ExitLabel_1
 push a
 push b

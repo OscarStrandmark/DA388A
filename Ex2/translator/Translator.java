@@ -1,9 +1,9 @@
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.nio.file.Path;
-import java.util.stream.Stream;
+import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.stream.Stream;
 
 /**
  * A class that translates Hack pseudo VM code to functional VM code.

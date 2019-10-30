@@ -94,10 +94,10 @@ public class Compiler extends EzLangBaseListener {
         }
     }
 
-    @Override public void exitGreater(EzLangParser.GreaterContext ctx) { write("gt"); }
-    @Override public void exitLess(EzLangParser.LessContext ctx) { write("lt"); }
+    @Override public void exitGreater(EzLangParser.GreaterContext ctx) { write("lt"); }
+    @Override public void exitLess(EzLangParser.LessContext ctx) { write("gt"); }
     @Override public void exitEqu(EzLangParser.EquContext ctx) { write("equ"); }
-    @Override public void exitNequ(EzLangParser.NequContext ctx) { }
+    @Override public void exitNequ(EzLangParser.NequContext ctx) { write("ne");}
 
     @Override public void exitPrint(EzLangParser.PrintContext ctx) {
         write("print " + ctx.children.get(1).getText());

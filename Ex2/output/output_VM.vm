@@ -7,7 +7,7 @@
 label EnterLabel_1
   push static 1
   push static 2
-lt
+gt
 if-goto ExitLabel_1
   push static 0
   push static 1
