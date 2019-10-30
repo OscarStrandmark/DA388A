@@ -1,6 +1,5 @@
 package batches;
 
-import memory.BestFit;
 import memory.FirstFit;
 import memory.Memory;
 import memory.Pointer;
@@ -48,9 +47,9 @@ public class SimpleBatch {
 		p6.write(range(1, 15));
 		
 		m.printLayout();
-		
-//		m.compact();
-//		System.out.println("After compact()");
-//		m.printLayout();
+
+		//		m.compact();
+		//		System.out.println("After compact()");
+		//		m.printLayout();
 	}
 }

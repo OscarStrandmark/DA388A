@@ -2,9 +2,7 @@ package memory;
 
 import custom.MemoryArea;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * This memory model allocates memory cells based on the first-fit method. 
@@ -15,7 +13,7 @@ import java.util.LinkedList;
 public class FirstFit extends Memory {
 
 	private LinkedList<MemoryArea> freeList;
-	private ArrayList<MemoryArea> allocated;
+	private HashMap<Integer,MemoryArea> allocated;
 
 	/**
 	 * Initializes an instance of a first fit-based memory.
@@ -26,7 +24,7 @@ public class FirstFit extends Memory {
 		super(size);
 
 		freeList = new LinkedList<MemoryArea>();
-		allocated = new ArrayList<MemoryArea>();
+		allocated = new HashMap<Integer, MemoryArea>();
 
 		freeList.add(new MemoryArea(0,size));
 	}
@@ -51,15 +49,16 @@ public class FirstFit extends Memory {
 				p.pointAt(area.getAddress()); //Point the pointer
 
 				freeList.remove(area); //Remove the area from the list of free areas
-				allocated.add(new MemoryArea(area.getAddress(),size)); //Add the object to the list of allocated areas
+				allocated.put(area.getAddress(),new MemoryArea(area.getAddress(),size)); //Add the object to the list of allocated areas
 				if(area.getSize()-size > 0){ //Check if remaining size != 0, this is to avoid an object with Ex. Address = 1000, size = 0
-					freeList.add(new MemoryArea(area.getAddress()+size,area.getSize()-size)); //Add the remaining area to the list of free areas
+					//freeList.add(new MemoryArea(area.getAddress()+size,area.getSize()-size)); //Add the remaining area to the list of free areas
+					freeList.add(i,new MemoryArea(area.getAddress()+size,area.getSize()-size));
+
 				}
 
 				i = freeList.size();
 			}
 		}
-		sortLists();
 		return p;
 	}
 	
@@ -70,20 +69,51 @@ public class FirstFit extends Memory {
 	 */
 	@Override
 	public void release(Pointer p) {
-		int address = p.pointsAt();
+		MemoryArea area = allocated.get(p.pointsAt());
+		if(area != null) {
+			allocated.remove(area.getAddress());
+			freeList.add(area);
+			Collections.sort(freeList);
 
-		for (int i = 0; i < allocated.size(); i++) {
-			if(allocated.get(i).getAddress() == address){
-				MemoryArea obj = allocated.get(i);
+			merge();
+		}
+	}
 
-				allocated.remove(obj);
-				freeList.add(obj);
-				i = allocated.size();
+	/**
+	 * Merges all free areas next to each other in the memory into one bigger memory-block.
+	 */
+	private void merge() {
+		//The list to replace freeList
+		LinkedList<MemoryArea> newList = new LinkedList<MemoryArea>();
+		//Create clone of freelist to work in
+		LinkedList<MemoryArea> copy = new LinkedList<MemoryArea>();
+		for(MemoryArea area : freeList){
+			copy.add(area);
+		}
+
+		int size = copy.size();
+
+		for(int i = 0; i <= size;i++){
+			MemoryArea currentArea = copy.pollFirst();
+
+			if(copy.peekFirst() != null){ //Check if list is not empty
+
+				boolean enable = true;
+				while(enable){
+					if((copy.peekFirst() != null) && (copy.peekFirst().getAddress() == (currentArea.getAddress() + currentArea.getSize()))) { //If next area in list is after current area (in the memory)
+						currentArea.setSize(currentArea.getSize() + copy.pollFirst().getSize()); //Add size of next object to current object and remove it from the list.
+					} else {
+						newList.add(currentArea);
+						enable = false;
+					}
+				}
+			} else {
+				if(currentArea != null)	newList.add(currentArea);
 			}
 		}
-		sortLists();
+		freeList = newList;
 	}
-	
+
 	/**
 	 * Prints a simple model of the memory. Example:
 	 * 
@@ -99,8 +129,10 @@ public class FirstFit extends Memory {
 		for(MemoryArea i : freeList){
 			tempList.add(i);
 		}
-		for(MemoryArea i : allocated){
-			tempList.add(i);
+
+		Set<Integer> keys = allocated.keySet();
+		for(Integer i : keys){
+			tempList.add(allocated.get(i));
 		}
 
 		Collections.sort(tempList);
@@ -115,21 +147,13 @@ public class FirstFit extends Memory {
 				ps += "Free\n";
 			}
 			else
-			if(allocated.contains(tempList.get(i)))	{
+			if(allocated.get(tempList.get(i).getAddress()) != null)	{
 				ps += "Allocated\n";
 			}
 		}
 		System.out.println(ps);
 	}
 
-	//Sorts lists, used for easier debugging. Don't know if lists are actually supposed to be sorted, so I'm just letting them sort by default.
-	private void sortLists() {
-		boolean WORK = true;
-		if(WORK){
-			Collections.sort(freeList);
-			Collections.sort(allocated);
-		}
-	}
 	/**
 	 * Compacts the memory space.
 	 */
