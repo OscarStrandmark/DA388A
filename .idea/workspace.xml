@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc3fa346-8700-4c29-ad72-15f4ee5a3737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/gen/EzLangParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/gen/EzLangParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/output/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/output/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/output/output_VM.vm" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/output/output_VM.vm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex2/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex2/translator/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/translator/Translator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +147,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1572445894111</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Uppgift 2 färdig.">
+      <created>1572450360272</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1572450360272</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
