@@ -65,11 +65,10 @@ public class Compiler extends EzLangBaseListener {
     @Override public void exitAdd(EzLangParser.AddContext ctx) {
         write("add");
     }
-
     @Override public void exitSub(EzLangParser.SubContext ctx) {
         write("sub");
     }
-    @Override public void exitMul(EzLangParser.MulContext ctx) { }
+    @Override public void exitMul(EzLangParser.MulContext ctx) { write("mul");}
 
     @Override public void enterLoop(EzLangParser.LoopContext ctx) {
         //Create new label and put on the loop-stack
@@ -96,7 +95,7 @@ public class Compiler extends EzLangBaseListener {
     @Override public void exitGreater(EzLangParser.GreaterContext ctx) { write("gt"); }
     @Override public void exitLess(EzLangParser.LessContext ctx) { write("lt"); }
     @Override public void exitEqu(EzLangParser.EquContext ctx) { write("equ"); }
-    @Override public void exitNequ(EzLangParser.NequContext ctx) { write("ne");}
+    @Override public void exitNequ(EzLangParser.NequContext ctx) { write("ne"); }
 
     @Override public void exitPrint(EzLangParser.PrintContext ctx) {
         write("print " + ctx.children.get(1).getText());
@@ -112,6 +111,13 @@ public class Compiler extends EzLangBaseListener {
        }
     }
 
+    @Override public void exitCond(EzLangParser.CondContext ctx) {
+        if(ctx.parent instanceof EzLangParser.LoopContext){
+            write("not");
+        }
+    }
+
+
     //Below: all unused methods
     @Override public void enterAssign(EzLangParser.AssignContext ctx) { }
     @Override public void enterFile(EzLangParser.FileContext ctx) { }
@@ -124,14 +130,13 @@ public class Compiler extends EzLangBaseListener {
     @Override public void enterAdd(EzLangParser.AddContext ctx) { }
     @Override public void enterSub(EzLangParser.SubContext ctx) { }
     @Override public void enterMul(EzLangParser.MulContext ctx) { }
-    @Override public void enterCond(EzLangParser.CondContext ctx) { }
-    @Override public void exitCond(EzLangParser.CondContext ctx) { }
     @Override public void enterEqu(EzLangParser.EquContext ctx) { }
     @Override public void enterNequ(EzLangParser.NequContext ctx) { }
     @Override public void enterLess(EzLangParser.LessContext ctx) { }
     @Override public void enterGreater(EzLangParser.GreaterContext ctx) { }
     @Override public void enterAtom(EzLangParser.AtomContext ctx) { }
     @Override public void enterEveryRule(ParserRuleContext ctx) { }
+    @Override public void enterCond(EzLangParser.CondContext ctx) { }
     @Override public void exitEveryRule(ParserRuleContext ctx) { }
     @Override public void visitTerminal(TerminalNode node) { }
     @Override public void visitErrorNode(ErrorNode node) { }
