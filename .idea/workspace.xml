@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc3fa346-8700-4c29-ad72-15f4ee5a3737" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Ex2/src/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/CompileEzLang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/CompileEzLang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex2/src/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex2/src/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ex2/src/Translator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +156,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1572450360272</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Uppgift 2 - Changed lt &lt;-&gt; gt">
+      <created>1572523392400</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1572523392400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +181,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Uppgift 2 färdig." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uppgift 2 färdig." />
+    <MESSAGE value="Uppgift 2 - Changed lt &lt;-&gt; gt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uppgift 2 - Changed lt &lt;-&gt; gt" />
   </component>
 </project>

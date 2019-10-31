@@ -24,6 +24,8 @@ public class Translator {
      * - outfile: the name of the file where the translated code will be written.
      */
     public static void main(String[] args) {
+
+        //Paths to the in- and output files. Change if necessary.
         String infilePath = "C:\\dev\\git\\DA388A\\Ex2\\output\\output.txt";
         String outfilePath ="C:\\dev\\git\\DA388A\\Ex2\\output\\output_VM.vm";
 

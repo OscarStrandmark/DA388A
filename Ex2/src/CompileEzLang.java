@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class CompileEzLang {
     public static void main(String[] args) throws IOException {
+
+        //Paths to the in- and output files. Change if necessary.
         String filepath_in = "C:\\dev\\git\\DA388A\\Ex2\\grammar\\TestProgram";
         String filepath_out = "C:\\dev\\git\\DA388A\\Ex2\\output\\output.txt";
 

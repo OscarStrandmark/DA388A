@@ -7,12 +7,10 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Stack;
 
 public class Compiler extends EzLangBaseListener {
 
-    private HashMap<String, Integer> varAddr = new HashMap<String, Integer>();
     private Stack<String> EntryLoopStack = new Stack<String>();
     private Stack<String> ExitLoopStack  = new Stack<String>();
 
@@ -20,6 +18,7 @@ public class Compiler extends EzLangBaseListener {
     // Ex. "Label" + labelCount; labelcount++;
     private int EnterLabelCount = 1;
     private int ExitLabelCount  = 1;
+
 
     private BufferedWriter writer;
 
