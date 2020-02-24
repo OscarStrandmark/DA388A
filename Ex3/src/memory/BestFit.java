@@ -1,7 +1,6 @@
 package memory;
 
 import custom.MemoryArea;
-
 import java.util.*;
 
 /**
@@ -75,10 +74,14 @@ public class BestFit extends Memory {
 		MemoryArea area = allocated.get(p.pointsAt());
 		if(area != null) {
 			allocated.remove(area.getAddress());
+
+			/*
 			freeList.add(area);
 			Collections.sort(freeList);
+			*/
 
 			merge();
+
 		}
 	}
 

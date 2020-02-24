@@ -72,8 +72,35 @@ public class FirstFit extends Memory {
 		MemoryArea area = allocated.get(p.pointsAt());
 		if(area != null) {
 			allocated.remove(area.getAddress());
+
+			boolean found = false;
+
+			if(freeList.size() > 0){
+				int i = 0;
+				while (!found && i < freeList.size()){
+					if(freeList.get(i).getAddress() >= area.getAddress()){
+						found = true;
+						freeList.add(i,area);
+					}
+					i++;
+				}
+			}
+			if(!found){
+				freeList.add(area);
+			}
+
+			/*
+			vvvvvvvvvvvvvvvvvvvvvvvvvvvv
 			freeList.add(area);
 			Collections.sort(freeList);
+			^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			Borttagen enligt kommentar på inlämning:
+			"Hej Oscar
+			Du gör rätt i din allokering, men din release() bygger på att du sorterar listan istället för att hålla den sorterad.
+			Detta är dyrt och följer inte den algoritm som beskrivs.
+			Ta en titt på det och skicka in igen.
+			Johan
+			*/
 
 			merge();
 		}
